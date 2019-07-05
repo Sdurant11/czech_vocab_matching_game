@@ -1,7 +1,6 @@
 header{
   text-align: center;
   height:10vh;
-  border: 1px solid black;
   width: 99%;
 }
 
@@ -32,18 +31,41 @@ aside{
 }
 
 .container {
-
   height: 100%;
   width: 100%;
   position: relative;
-  background-color: yellow;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: darkblue;
   border: 2px solid black;
 }
 
 .card{
-  background-color: black;
-  height: 26%;
-  width: 16%;
+  height: 31%;
+  width: 15%;
   display: inline-block;
+  position: relative;
+  margin: 5px;
+}
 
+.card-front, .card-back, .side1, .dan{
+  position:absolute;
+  height:100%;
+  width:100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.side1{
+    background-image: url("./assets/images/lfz-card.jpg");
+}
+
+.dan{
+  background-image: url("./assets/images/dan.jpg");
+}
+
+.hidden{
+  display: none;
 }
