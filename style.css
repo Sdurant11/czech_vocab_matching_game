@@ -50,7 +50,7 @@ aside{
   margin: 5px;
 }
 
-.card-front, .card-back, .side1, .dan, .cody{
+.card-front, .card-back, .side1, .dan, .cody, .bill, .blind-robot, .brett, .scott, .tim-d, .tim-h, .tj{
   position:absolute;
   height:100%;
   width:100%;
@@ -59,7 +59,7 @@ aside{
 }
 
 .side1{
-    background-image: url("./assets/images/lfz-card.jpg");
+  background-image: url("./assets/images/lfz-card.jpg");
 }
 
 .dan{
@@ -67,7 +67,35 @@ aside{
 }
 
 .cody{
-  background-image: url("./assets/images/cody.jpg")
+  background-image: url("./assets/images/cody.jpg");
+}
+
+.bill{
+  background-image: url("./assets/images/bill.jpg");
+}
+
+.blind-robot{
+  background-image: url('./assets/images/blind-robot.jpg')
+}
+
+.brett{
+  background-image: url('./assets/images/brett.jpg');
+}
+
+.scott{
+  background-image: url('./assets/images/scott.jpg');
+}
+
+.tim-d{
+  background-image: url('./assets/images/tim-d.jpg');
+}
+
+.tim-h{
+  background-image: url('./assets/images/tim-h.jpg');
+}
+
+.tj{
+  background-image: url('./assets/images/tj.jpg');
 }
 
 .hidden{
