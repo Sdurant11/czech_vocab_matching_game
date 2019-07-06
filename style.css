@@ -50,7 +50,7 @@ aside{
   margin: 5px;
 }
 
-.card-front, .card-back, .side1, .dan{
+.card-front, .card-back, .side1, .dan, .cody{
   position:absolute;
   height:100%;
   width:100%;
@@ -64,6 +64,10 @@ aside{
 
 .dan{
   background-image: url("./assets/images/dan.jpg");
+}
+
+.cody{
+  background-image: url("./assets/images/cody.jpg")
 }
 
 .hidden{
