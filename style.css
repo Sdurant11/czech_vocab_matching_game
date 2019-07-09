@@ -1,0 +1,142 @@
+body{
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+}
+
+header{
+  text-align: center;
+  height:10vh;
+  width: 99%;
+  font-size: 25px;
+}
+
+main {
+  display: inline-block;
+  height: 85vh;
+  width:84%;
+}
+
+aside {
+  width: 15%;
+  height: 85vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2{
+  font-size: 30px;
+  margin-bottom: 3px;
+  margin-top: 1px;
+}
+
+.stats{
+  border-radius: 25px;
+  border: 2px solid gray;
+  width: 90%;
+  height: 11%;
+  padding: 3px;
+  background-color: lightblue;
+  text-align: center;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 7px 7px 5px grey;
+  font-size: 20px;
+}
+
+.game_container{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card{
+  height: 31%;
+  width: 15%;
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  box-shadow: 7px 7px 5px grey;
+}
+
+.card-front, .card-back, .side1, .dan, .cody, .bill, .blind-robot, .brett, .scott, .tim-d, .tim-h, .tj{
+  position:absolute;
+  height:100%;
+  width:100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.side1{
+  background-image: url("./assets/images/lfz-card.jpg");
+}
+
+.dan{
+  background-image: url("./assets/images/dan.jpg");
+}
+
+.cody{
+  background-image: url("./assets/images/cody.jpg");
+}
+
+.bill{
+  background-image: url("./assets/images/bill.jpg");
+}
+
+.blind-robot{
+  background-image: url('./assets/images/blind-robot.jpg')
+}
+
+.brett{
+  background-image: url('./assets/images/brett.jpg');
+}
+
+.scott{
+  background-image: url('./assets/images/scott.jpg');
+}
+
+.tim-d{
+  background-image: url('./assets/images/tim-d.jpg');
+}
+
+.tim-h{
+  background-image: url('./assets/images/tim-h.jpg');
+}
+
+.tj{
+  background-image: url('./assets/images/tj.jpg');
+}
+
+.hidden{
+  display: none;
+}
+
+.win{
+  border-radius: 25px;
+  border: 3px solid grey;
+  height: 15%;
+  width: 20%;
+  background-color: white;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  align-content: center;
+  padding-top: 20px;
+}
