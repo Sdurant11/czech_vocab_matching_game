@@ -1,5 +1,7 @@
 body{
+  background-image: url("./assets/images/building.jpg");
   font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  color: white;
 }
 
 header{
@@ -7,6 +9,7 @@ header{
   height:10vh;
   width: 99%;
   font-size: 25px;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 main {
@@ -29,6 +32,7 @@ h2{
   font-size: 30px;
   margin-bottom: 3px;
   margin-top: 1px;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .stats{
@@ -38,6 +42,7 @@ h2{
   height: 11%;
   padding: 3px;
   background-color: lightblue;
+  opacity: 0.7;
   text-align: center;
   margin-bottom: 8px;
   display: flex;
@@ -45,6 +50,7 @@ h2{
   justify-content: center;
   box-shadow: 7px 7px 5px grey;
   font-size: 20px;
+  color: black;
 }
 
 .game_container{
@@ -76,7 +82,7 @@ h2{
   box-shadow: 7px 7px 5px grey;
 }
 
-.card-front, .card-back, .side1, .dan, .cody, .bill, .blind-robot, .brett, .scott, .tim-d, .tim-h, .tj{
+.card-front, .card-back, .side1, .dan, .cody, .bill, .blind-robot, .brett, .scott, .tim-d, .tim-h, .bridge{
   position:absolute;
   height:100%;
   width:100%;
@@ -85,44 +91,56 @@ h2{
 }
 
 .side1{
-  background-image: url("./assets/images/lfz-card.jpg");
+  background-image: url("./assets/images/czech-flag.jpg");
 }
 
-.dan{
-  background-image: url("./assets/images/dan.jpg");
+.hello, .dobry_den{
+  background-image: url("./assets/images/hello.jpg");
 }
 
-.cody{
-  background-image: url("./assets/images/cody.jpg");
+.dobry_den, .hrad, .muz, .most, .zena, .kocka, .pes, .dobrou_noc, .pivo{
+  opacity: 0.7;
+  background-color: white;
 }
 
-.bill{
-  background-image: url("./assets/images/bill.jpg");
+.castle, .hrad{
+  background-image: url("./assets/images/castle.jpg");
 }
 
-.blind-robot{
-  background-image: url('./assets/images/blind-robot.jpg')
+.man, .muz{
+  background-image: url("./assets/images/man.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.brett{
-  background-image: url('./assets/images/brett.jpg');
+.woman, .zena{
+  background-image: url('./assets/images/woman.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.scott{
-  background-image: url('./assets/images/scott.jpg');
+.cat, .kocka{
+  background-image: url('./assets/images/cat.jpg');
 }
 
-.tim-d{
-  background-image: url('./assets/images/tim-d.jpg');
+.beer, .pivo{
+  background-image: url('./assets/images/beer.jpg');
 }
 
-.tim-h{
-  background-image: url('./assets/images/tim-h.jpg');
+.dog, .pes{
+  background-image: url('./assets/images/dog.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.tj{
-  background-image: url('./assets/images/tj.jpg');
+.goodnight, .dobrou_noc{
+  background-image: url('./assets/images/goodnight.jpg');
 }
+
+.bridge, .most{
+  background-image: url('./assets/images/bridge.jpg');
+}
+
 
 .hidden{
   display: none;
@@ -139,4 +157,13 @@ h2{
   text-align: center;
   align-content: center;
   padding-top: 20px;
+}
+
+.image-text {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px #000000;
 }
