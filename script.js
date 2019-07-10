@@ -43,7 +43,6 @@ function displayStats(){
 }
 
 function handleCardClick(event){
-  debugger;
   if($(event.currentTarget).children('.side1').hasClass('hidden')){
     return;
   }
