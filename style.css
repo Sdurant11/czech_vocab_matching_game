@@ -82,7 +82,7 @@ h2{
   box-shadow: 7px 7px 5px grey;
 }
 
-.card-front, .card-back, .side1, .dan, .cody, .bill, .blind-robot, .brett, .scott, .tim-d, .tim-h, .bridge{
+.card-front, .card-back, .side1{
   position:absolute;
   height:100%;
   width:100%;
@@ -141,11 +141,6 @@ h2{
   background-image: url('./assets/images/bridge.jpg');
 }
 
-
-.hidden{
-  display: none;
-}
-
 .win{
   border-radius: 25px;
   border: 3px solid grey;
@@ -157,6 +152,7 @@ h2{
   text-align: center;
   align-content: center;
   padding-top: 20px;
+  color: black;
 }
 
 .image-text {
@@ -166,4 +162,8 @@ h2{
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 2px 2px 4px #000000;
+}
+
+.hidden{
+  display: none;
 }
