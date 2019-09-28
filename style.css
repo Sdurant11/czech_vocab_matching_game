@@ -6,31 +6,39 @@ body{
 
 header{
   text-align: center;
-  height:10vh;
+  height:6vh;
   width: 99%;
   font-size: 25px;
   text-shadow: 2px 2px 4px #000000;
+  display: block;
+  font-size: 5vw;
+  margin-bottom: 2%;
+}
+
+h1{
+
+  margin-block-start: 0.5em;
+  margin-block-end: 0.6em;
 }
 
 main {
   display: inline-block;
   height: 85vh;
-  width:84%;
+  width:100%;
 }
 
 aside {
-  width: 15%;
-  height: 85vh;
+  width: 90%;
+  height: 4vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 h2{
-  font-size: 30px;
-  margin-bottom: 3px;
+  margin-bottom: 1px;
   margin-top: 1px;
   text-shadow: 2px 2px 4px #000000;
 }
@@ -39,7 +47,7 @@ h2{
   border-radius: 25px;
   border: 2px solid gray;
   width: 90%;
-  height: 11%;
+  height: 80%;
   padding: 3px;
   background-color: lightblue;
   opacity: 0.7;
@@ -48,12 +56,15 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 7px 7px 5px grey;
-  font-size: 20px;
+  box-shadow: 7px 7px 5px darkgrey;
+  font-size: 2vw;
   color: black;
 }
 
+
 .game_container{
+  margin-top: 1%;
+  padding-top: 2%;
   height: 100%;
   width: 100%;
   position: relative;
@@ -79,7 +90,11 @@ h2{
   display: inline-block;
   position: relative;
   margin: 5px;
-  box-shadow: 7px 7px 5px grey;
+  box-shadow: 5px 5px 3px darkgrey;
+}
+
+.card:hover{
+  box-shadow: 7px 7px 5px darkgrey;
 }
 
 .card-front, .card-back, .side1{
@@ -166,4 +181,12 @@ h2{
 
 .hidden{
   display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .card {
+    width: 25%;
+    height: 16%
+  }
 }
