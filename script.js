@@ -3,7 +3,7 @@ $(document).ready(initializeApp);
 var firstCardClicked = null;
 var secondCardClicked = null;
 var matches = 0;
-var maxMatches = 2;
+var maxMatches = 9;
 var attempts = 0;
 var gamesPlayed=0;
 var accuracy = null;
@@ -30,8 +30,8 @@ function calculateAccuracy() {
 function resetStats(){
   $('.card').children('.side1').removeClass('hidden');
   $('.win').addClass('hidden');
-  matches = null;
-  attempts = null;
+  matches = 0;
+  attempts = 0;
   $('.attempts_num').text('0');
   $('.accuracy_num').text('0%');
 }
@@ -42,8 +42,10 @@ function displayStats(){
   $('.games_played_num').text(gamesPlayed);
 }
 
-
 function handleCardClick(event){
+  if($(event.currentTarget).children('.side1').hasClass('hidden')){
+    return;
+  }
   $(event.currentTarget).children('.side1').addClass('hidden');
 
   if (firstCardClicked === null){
@@ -52,6 +54,7 @@ function handleCardClick(event){
     secondCardClicked = $(event.currentTarget);
 
     if (firstCardClicked.find('*').css('background-image') === secondCardClicked.find('*').css('background-image')) {
+      console.log(firstCardClicked.find('*').css('background-image'), '+', secondCardClicked.find('*').css('background-image'));
       matches ++;
       firstCardClicked = null;
       secondCardClicked = null;
